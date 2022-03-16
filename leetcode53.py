@@ -3,7 +3,7 @@ class Solution:
     '''
     1. 이진트리를 이용해서 계산 -> 위치를 바꾸기 때문에 땡
     2. dynamic programming 을 이용하기
-    
+    if nums[n-1] > 0 -> num[n]+ num[n-1]
     '''
     def maxSubArray(self, nums: List[int]) -> int:
         for i in range(1  ,  len(nums) ):
