@@ -7,7 +7,8 @@ class Solution:
             return True
         return  self.isSubtree(root.left , subRoot) or self.isSubtree(root.right , subRoot) 
     def isSametree(self , r : Optional[TreeNode] , s : Optional[TreeNode]):
+        if not r and not s:
+            return True
         if r and s  :
             return r.val == s.val and self.isSametree(r.left , s.left) and  self.isSametree(r.right , s.right) 
-        
         return False
