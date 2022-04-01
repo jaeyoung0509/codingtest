@@ -8,7 +8,6 @@ class Solution:
         strs = strs[1:]
         for idx ,val in enumerate(target):
             for other in strs:
-                print( val , other , other[idx])
                 if other[idx] != val:
                     return target[:idx]
         return target

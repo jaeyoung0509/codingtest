@@ -12,7 +12,7 @@ class Solution:
         intervals = intervals[1:]
         and keep comapring result.end <->  interval.start   which is more big
         😣 caution 
-        for avoid , index range error  Use python slice (-1) 
+        for avoid index range error ,   Use python slice (-1) 
         '''
         if len(intervals) == 1 : 
             return intervals
